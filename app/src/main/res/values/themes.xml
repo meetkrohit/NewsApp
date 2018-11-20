@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:textColorPrimary">@color/textPrimary</item>
+        <item name="alertDialogTheme">@style/Theme.App.AppCompatDialogStyle</item>
+        <item name="dialogTheme">@style/Theme.App.AppCompatDialogStyle</item>
+        <item name="windowActionModeOverlay">true</item>
+        <item name="actionModeBackground">@color/accent</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:spinnerItemStyle">@style/TextAppearanceSpinnerItem</item>
+        <item name="actionMenuTextAppearance">@style/TextAppearance.AppCompat.Medium</item>
+    </style>
+
+    <style name="BaseTheme.MainTheme">
+        <item name="colorPrimary">@color/Tab_Color</item>
+        <item name="colorPrimaryDark">@color/Tab_Color</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="BaseTheme.MainTheme.WithNavDrawer"></style>
+
+    <style name="Theme.App.AppCompatDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColorPrimary">@color/text_black_100</item>
+        <item name="windowNoTitle">false</item>
+        <!-- that's the important bit -->
+    </style>
+
+    <style name="TextAppearanceSpinnerItem">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+
+    <style name="TransparentTheme" parent="@style/Theme.AppCompat.NoActionBar">
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>
